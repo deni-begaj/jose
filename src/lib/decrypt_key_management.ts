@@ -77,6 +77,7 @@ async function decryptKeyManagement(
 
       return aesKw(alg.slice(-6), sharedSecret, encryptedKey)
     }
+    case 'http://www.w3.org/2001/04/xmlenc#rsa-oaep':
     case 'RSA1_5':
     case 'RSA-OAEP':
     case 'RSA-OAEP-256':
